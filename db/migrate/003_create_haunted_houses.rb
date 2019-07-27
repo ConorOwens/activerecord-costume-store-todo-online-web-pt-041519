@@ -4,9 +4,12 @@ class CreateHauntedHouses  < ActiveRecord::Migration
   def change
     create_table :costumes do |a|
       a.string :name 
-      a.float :price
-      a.string :url
-      a.string :size 
-      a.timestamps
+      a.string :location
+      a.string :theme
+      a.float :price 
+      a.boolean :family_friendly
+      a.string :opening_date
+      a.string :closing_date
+      a.text :description
     end
   end
