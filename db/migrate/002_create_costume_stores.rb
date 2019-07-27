@@ -4,9 +4,11 @@ class CreateCostumeStores  < ActiveRecord::Migration
   def change
     create_table :costumes do |a|
       a.string :name 
-      a.float :price
-      a.string :url
-      a.string :size 
-      a.timestamps
+      a.string :location
+      a.integer :costume_inventory
+      a.integer :num_of_employees 
+      a.boolean :still_in_business
+      a.string :opening_time
+      a.string :closing_time
     end
   end
