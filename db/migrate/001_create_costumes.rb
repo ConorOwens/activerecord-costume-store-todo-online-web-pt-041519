@@ -18,3 +18,4 @@ class CreateCostumes  < ActiveRecord::Migration
       a.timestamps
     end
   end
+end
